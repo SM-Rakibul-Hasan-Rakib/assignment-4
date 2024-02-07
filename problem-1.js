@@ -1,6 +1,6 @@
 /*function signature/sample */
 function calculateMoney(ticketSale) {
-  //invalid number 
+  //you can give your own error message
   if(isNaN(ticketSale) || ticketSale < 0){
     return "Invalid Number"
   }
@@ -26,3 +26,4 @@ function calculateMoney(ticketSale) {
   console.log(calculateMoney(10));
   console.log(calculateMoney(1055));
   console.log(calculateMoney(93));
+  console.log(calculateMoney(-93));
