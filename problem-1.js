@@ -1,5 +1,9 @@
 /*function signature/sample */
 function calculateMoney(ticketSale) {
+  //invalid number 
+  if(isNaN(ticketSale) || ticketSale < 0){
+    return "Invalid Number"
+  }
 
   // You have to write your code here
   
@@ -8,7 +12,17 @@ function calculateMoney(ticketSale) {
   const stafNumber = 8;
   const stafLunchBill = 50;
 
-  const 
+  const totalSale = ticketSale * ticketSalePrice;
+  const totalLunchBill = stafLunchBill * stafNumber;
+  const totalamount = totalLunchBill + oneSecurityDailySallery;
+  
+  const result = totalSale - totalamount;
+
+  return result;
+
+
   }
-  const total = ticketSale.amount(10);
-  console.log(total);
+  
+  console.log(calculateMoney(10));
+  console.log(calculateMoney(1055));
+  console.log(calculateMoney(93));
