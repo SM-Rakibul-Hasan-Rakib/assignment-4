@@ -16,4 +16,3 @@ function checkName(name){
     return error;
   }
 }
-console.log(checkName("Shafin"));

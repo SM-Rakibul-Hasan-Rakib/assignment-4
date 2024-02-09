@@ -39,8 +39,8 @@ function monthlySavings(arr, livingCost) {
        }
    }
 
-let array = [900, 2700, 3400]
-let cost = 10000;
+let array = [1000, 2000, 2500]
+let cost = 5000;
 console.log(monthlySavings(cost, array));
 
 
